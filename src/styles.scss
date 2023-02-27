@@ -1,3 +1,23 @@
+@import "vars.scss";
+
 body{
-    background: linear-gradient(#5E17EB, #8C52FF);
+    background-color: $dpurple;
+    background-image: url("C:/Users/Germe/Desktop/bgpatternyo.png");
+    //opacity: 1;
+    //background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, $dpurple 40px ), repeating-linear-gradient( #8c52ff20, #8c52ff00 );
+
+    //background:  radial-gradient( circle, transparent 50%, url("C:/Users/Germe/Desktop/bstudios.png") 0);
+    //background-size: 600px;
+    //background-position: center;
+
 }
+
+
+
+
+
+/*
+    background:  radial-gradient( $bgimage, transparent , black 40px ), repeating-linear-gradient( #8c52ff20, #8c52ff00 ); 
+    //background-image: $bgimage;
+    background-attachment: fixed;
+    */

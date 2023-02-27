@@ -1,12 +1,23 @@
-.container{
-    padding: 1%;
+@import "/src/vars.scss";
+
+//.container{}
+
+.wrapper{
     display: grid;
-    grid-template-rows: auto 75% auto;
-    grid-row: 2 / 3;
+    grid-template-rows: auto 550px auto;
+    //grid-row-gap: 10px;
 }
 
 .searchbar{
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 1%;
+    top: 1px;
+}
+
+.explore{
+
+}
+
+.player{
+    
 }

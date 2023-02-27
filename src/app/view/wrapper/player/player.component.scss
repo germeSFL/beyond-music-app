@@ -1,0 +1,12 @@
+@import "/src/vars.scss";
+
+.wrapper{
+    background: $lpurpleglass;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8.6px);
+    outline: 1px solid rgba(84, 70, 70, 0.21); 
+    border-radius: 10px;
+    height: 75px;
+    outline: 1px solid rgba(84, 70, 70, 0.21); 
+}

@@ -1,28 +1,99 @@
+@import "/src/vars.scss";
+
+/*
+    main container
+*/ 
+
 .searchbox{
-    position:absolute;
-}
-.searchbar{
-    display: grid;
-    grid-template-columns: 75vw auto;
-    align-content: center;
-    place-items: center;
-}
-.searchbar input{
-    width: 60vw;
-    height: 25px;
-    border-radius: 10px;
-    padding: 1%;
+    width: 75vw;
+    margin: 1% auto;
 }
 
-.searchbar .searchbtn{
-    position: relative;
-    border-radius: 10px;
-    padding: 1%;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 30px;
-    background: black;
-    color: white;
-    border-radius: 10px;
+/*
+    div containing input and icon separately
+*/
+
+.searchbar{
+    border-radius: 50px;
+    padding: 5px;
+    background: $lpurpleglass;
+    outline: 1px solid rgba(84, 70, 70, 0.21); 
+   // outline: 1px solid $lpurple;
 }
+
+.searchbar:hover{
+    background: $lpurpleglass;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8.6px);
+    outline: 1px solid rgba(84, 70, 70, 0.21); 
+}
+
+/*
+    input field with actions
+*/
+
+.searchbar input{
+    width: 90%;
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    background: transparent;
+    color: white;
+    opacity: 50%;
+    border: 0;
+    &:focus {
+        outline: 0;
+        background: $lpurple;
+    }
+}
+
+.searchbar input::placeholder {
+    opacity: 0.6;
+    color: white;
+}
+
+.searchbar input::content {
+    opacity: 1;
+    color: white;
+    padding: 10px 10px;
+}
+
+.searchbar input:focus {
+    outline: 0;
+    background: transparent;
+}
+
+/*
+    icon/button field with actions
+*/
+
+.searchbar i{
+    position: relative;
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+    
+    border-radius: 50px;
+    color: #fff;
+    background: $lpurple;
+}
+
+.searchbar i:hover {
+    background: #fff;
+    color: $dpurple;
+}
+
+.search i:active {
+    box-shadow: 0px 0px 12px 0px #000000;
+}
+
+
+/* From https://css.glass 
+background: rgba(84, 70, 70, 0.53);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.6px);
+-webkit-backdrop-filter: blur(8.6px);
+border: 1px solid rgba(84, 70, 70, 0.21);
+*/
