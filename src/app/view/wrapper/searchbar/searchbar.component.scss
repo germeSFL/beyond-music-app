@@ -1,0 +1,28 @@
+.searchbox{
+    position:absolute;
+}
+.searchbar{
+    display: grid;
+    grid-template-columns: 75vw auto;
+    align-content: center;
+    place-items: center;
+}
+.searchbar input{
+    width: 60vw;
+    height: 25px;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.searchbar .searchbtn{
+    position: relative;
+    border-radius: 10px;
+    padding: 1%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}

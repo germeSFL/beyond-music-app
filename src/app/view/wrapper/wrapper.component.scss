@@ -1,0 +1,12 @@
+.container{
+    padding: 1%;
+    display: grid;
+    grid-template-rows: auto 75% auto;
+    grid-row: 2 / 3;
+}
+
+.searchbar{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1%;
+}
